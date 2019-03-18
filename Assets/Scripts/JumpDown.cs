@@ -5,7 +5,7 @@ using UnityEngine;
 public class JumpDown : MonoBehaviour
 {
 
-    public GameObject Player;
+    public GameObject Platform;
     public bool keyDown;
     public bool isOn;
     
@@ -28,8 +28,7 @@ public class JumpDown : MonoBehaviour
         }
 
         if(keyDown && isOn){
-            Player.GetComponent<BoxCollider2D> ().enabled = false;
-            Player.GetComponent<CircleCollider2D> ().enabled = false;
+            Platform.GetComponent<BoxCollider2D> ().enabled = false;
             StartCoroutine(waitEnable());
         }
 
@@ -39,8 +38,7 @@ public class JumpDown : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        Player.GetComponent<BoxCollider2D> ().enabled = true;
-        Player.GetComponent<CircleCollider2D> ().enabled = true;
+        Platform.GetComponent<BoxCollider2D> ().enabled = true;
     }
 
     void LateUpdate(){
