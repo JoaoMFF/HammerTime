@@ -17,7 +17,8 @@ public class JumpDown : MonoBehaviour
 
     void Start()
     {
-
+        keyDown = false;
+        isOn = false;
     }
 
     void Update()
@@ -36,7 +37,7 @@ public class JumpDown : MonoBehaviour
 
     IEnumerator waitEnable()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
         Platform.GetComponent<BoxCollider2D> ().enabled = true;
     }
@@ -45,12 +46,15 @@ public class JumpDown : MonoBehaviour
         keyDown = false;
     }
 
-    // when the GameObjects collider arrange for this GameObject to travel to the left of the screen
-    void OnTriggerEnter2D(Collider2D col)
-    {
+    void OnTriggerStay2D(Collider2D col){
         if(col.tag == "Player"){
             isOn = true;
         }
+    }
+    // when the GameObjects collider arrange for this GameObject to travel to the left of the screen
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        
     }
 
     void OnTriggerExit2D(Collider2D col)
