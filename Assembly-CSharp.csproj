@@ -61,6 +61,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\JumpDown.cs" />
+     <Compile Include="Assets\Scripts\Run.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Joao_/Documents/HammerTime/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

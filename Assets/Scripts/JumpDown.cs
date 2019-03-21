@@ -6,8 +6,8 @@ public class JumpDown : MonoBehaviour
 {
 
     public GameObject Platform;
-    public bool keyDown;
-    public bool isOn;
+    private bool keyDown;
+    private bool isOn;
     
     void Awake()
     {
@@ -50,11 +50,6 @@ public class JumpDown : MonoBehaviour
         if(col.tag == "Player"){
             isOn = true;
         }
-    }
-    // when the GameObjects collider arrange for this GameObject to travel to the left of the screen
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        
     }
 
     void OnTriggerExit2D(Collider2D col)
