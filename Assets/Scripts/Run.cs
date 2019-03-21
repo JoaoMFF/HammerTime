@@ -5,30 +5,40 @@ using UnityEngine;
 public class Run : MonoBehaviour
 {
     private bool isOn;
-    private bool keyDown;
+    public GameObject Erro1;
+    public bool Error1Correct;
+    private GameObject ErrorMessage;
+    private SingleError singleError;
+    private GameObject OutputText;
+
     // Start is called before the first frame update
     void Start()
     {
-        keyDown = false;
         isOn = false;
+
+        ErrorMessage = GameObject.Find("Error");
+        singleError = ErrorMessage.GetComponent<SingleError>();
+        OutputText = GameObject.Find("OutputText");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            keyDown = true;
-        }
+        Error1Correct = singleError.isCorrect;
 
-        if(isOn && keyDown){
-            Debug.Log("RUN!");
+        if(isOn && Input.GetKey(KeyCode.LeftControl)){
+
+            if(!Error1Correct){
+                OutputText.GetComponent<UnityEngine.UI.Text> ().text = singleError.errorMessage;
+            }
+            else{
+                OutputText.GetComponent<UnityEngine.UI.Text> ().text = "";
+            }
+
         }
     }
 
-    void LateUpdate(){
-        keyDown = false;
-    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
