@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Run : MonoBehaviour
 {
@@ -24,9 +25,13 @@ public class Run : MonoBehaviour
     {
 
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
-            string Error =GetErrors();
+            string Error = GetErrors();
 
             OutputText.GetComponent<UnityEngine.UI.Text> ().text = Error;
+
+            if(Error == "" && SceneManager.GetActiveScene().name == "L1"){
+                SceneManager.LoadScene("L2", LoadSceneMode.Single);
+            }
         }
     }
 

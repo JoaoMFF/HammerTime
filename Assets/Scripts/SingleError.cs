@@ -11,6 +11,7 @@ public class SingleError : MonoBehaviour
     public string errorMessage;
     private bool isOn;
     public GameObject TextToDisplay;
+    public GameObject Glitch;
      
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,11 @@ public class SingleError : MonoBehaviour
     void Update()
     {
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
+            if(!isCorrect){
+                Glitch.SetActive(true);
+                StartCoroutine(waitEnable());
+            }
+
             TextToDisplay.GetComponent<UnityEngine.UI.Text> ().text = Correct;
             isCorrect = true;
         }
@@ -42,5 +48,13 @@ public class SingleError : MonoBehaviour
         if(col.tag == "Hammer"){
             isOn = false;
         }
+    }
+
+    
+    IEnumerator waitEnable()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        Glitch.SetActive(false);
     }
 }

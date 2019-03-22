@@ -20,7 +20,7 @@ public class JumpDown : MonoBehaviour
 
     void Update()
     {
-        if(isOn && Input.GetKey("s")){
+        if(isOn && Input.GetKey("s") || isOn && Input.GetKey("down")){
             Platform.GetComponent<BoxCollider2D> ().enabled = false;
             StartCoroutine(waitEnable());
         }
