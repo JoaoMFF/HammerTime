@@ -5,37 +5,28 @@ using UnityEngine;
 public class Run : MonoBehaviour
 {
     private bool isOn;
-    public GameObject Erro1;
-    public bool Error1Correct;
     private GameObject ErrorMessage;
     private SingleError singleError;
     private GameObject OutputText;
+    public GameObject[] Errors;
 
     // Start is called before the first frame update
     void Start()
     {
         isOn = false;
 
-        ErrorMessage = GameObject.Find("Error");
-        singleError = ErrorMessage.GetComponent<SingleError>();
         OutputText = GameObject.Find("OutputText");
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Error1Correct = singleError.isCorrect;
 
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
+            string Error =GetErrors();
 
-            if(!Error1Correct){
-                OutputText.GetComponent<UnityEngine.UI.Text> ().text = singleError.errorMessage;
-            }
-            else{
-                OutputText.GetComponent<UnityEngine.UI.Text> ().text = "";
-            }
-
+            OutputText.GetComponent<UnityEngine.UI.Text> ().text = Error;
         }
     }
 
@@ -52,5 +43,17 @@ public class Run : MonoBehaviour
         if(col.tag == "Hammer"){
             isOn = false;
         }
+    }
+
+    string GetErrors()
+    {
+        foreach (GameObject error in Errors) 
+        {
+            singleError = error.GetComponent<SingleError>();
+            if(!singleError.isCorrect){
+                return singleError.errorMessage;
+            }
+        }
+        return "";
     }
 }
