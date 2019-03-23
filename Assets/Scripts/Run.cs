@@ -12,6 +12,7 @@ public class Run : MonoBehaviour
     private GameObject[] Errors;
     public GameObject Level1;
     public GameObject Level2;
+    public GameObject Glitch;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,8 @@ public class Run : MonoBehaviour
     void Update()
     {
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
+            Glitch.SetActive(true);
+            StartCoroutine(waitEnable());
             ErrorsDisplay();
         }
     }
@@ -74,5 +77,12 @@ public class Run : MonoBehaviour
                 Level2.SetActive(true);
             }
             */
+    }
+
+    IEnumerator waitEnable()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        Glitch.SetActive(false);
     }
 }

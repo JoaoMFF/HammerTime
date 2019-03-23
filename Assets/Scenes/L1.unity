@@ -3456,6 +3456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level1: {fileID: 906646623}
   Level2: {fileID: 1650978220}
+  Glitch: {fileID: 1679846413}
 --- !u!4 &1937920739813738727
 Transform:
   m_ObjectHideFlags: 0
@@ -3499,11 +3500,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104185767639730237, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2104185768371877508, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
         type: 3}
@@ -3560,6 +3556,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104185767639730237, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2104185768766419141, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
         type: 3}
       propertyPath: Errors.Array.data[0]
@@ -3580,6 +3581,11 @@ PrefabInstance:
       propertyPath: Level2
       value: 
       objectReference: {fileID: 1260856615}
+    - target: {fileID: 2104185768766419141, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
+        type: 3}
+      propertyPath: Glitch
+      value: 
+      objectReference: {fileID: 1792937021}
     - target: {fileID: 2104185769078821643, guid: 7f8f47ef56dd39a4ea02f8762a0461a5,
         type: 3}
       propertyPath: m_LocalScale.x
