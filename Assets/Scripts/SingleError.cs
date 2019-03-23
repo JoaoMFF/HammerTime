@@ -9,7 +9,7 @@ public class SingleError : MonoBehaviour
     public string Correct;
     public bool isCorrect;
     public string errorMessage;
-    private bool isOn;
+    public bool isOn;
     public GameObject TextToDisplay;
     public GameObject Glitch;
      
@@ -49,7 +49,6 @@ public class SingleError : MonoBehaviour
             isOn = false;
         }
     }
-
     
     IEnumerator waitEnable()
     {

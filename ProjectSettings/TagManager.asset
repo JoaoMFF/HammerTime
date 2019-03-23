@@ -9,6 +9,9 @@ TagManager:
   - Player2
   - L1P1
   - L2P1
+  - L1P2
+  - L2P2
+  - Error2
   layers:
   - Default
   - TransparentFX
