@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Hammer
   - Error
+  - Player2
+  - L1P1
+  - L2P1
   layers:
   - Default
   - TransparentFX

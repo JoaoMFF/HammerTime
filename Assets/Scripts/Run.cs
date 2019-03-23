@@ -9,7 +9,9 @@ public class Run : MonoBehaviour
     private GameObject ErrorMessage;
     private SingleError singleError;
     private GameObject OutputText;
-    public GameObject[] Errors;
+    private GameObject[] Errors;
+    public GameObject Level1;
+    public GameObject Level2;
 
     // Start is called before the first frame update
     void Start()
@@ -23,15 +25,21 @@ public class Run : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
             string Error = GetErrors();
 
             OutputText.GetComponent<UnityEngine.UI.Text> ().text = Error;
 
-            if(Error == "" && SceneManager.GetActiveScene().name == "L1"){
-                SceneManager.LoadScene("L2", LoadSceneMode.Single);
+            if(Error == "" && Level1.active){
+                Level1.SetActive(false);
+                Level2.SetActive(true);
             }
+            /* 
+            else if(Error == "" && Level1.SetActive(true)){
+                Level1.SetActive(false);
+                Level2.SetActive(true);
+            }
+            */
         }
     }
 
@@ -52,6 +60,7 @@ public class Run : MonoBehaviour
 
     string GetErrors()
     {
+        Errors =  GameObject.FindGameObjectsWithTag("Error");
         foreach (GameObject error in Errors) 
         {
             singleError = error.GetComponent<SingleError>();

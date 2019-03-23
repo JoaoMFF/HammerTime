@@ -6,21 +6,28 @@ public class JumpDown : MonoBehaviour
 {
 
     public GameObject Platform;
-    private bool isOn;
+    public bool isOn;
+    public bool isOn2;
     
     void Awake()
     {
         isOn = false;
+        isOn2 = false;
     }
 
     void Start()
     {
+        isOn2 = false;
         isOn = false;
     }
 
     void Update()
     {
-        if(isOn && Input.GetKey("s") || isOn && Input.GetKey("down")){
+        if(isOn && Input.GetKey("s")){
+            Platform.GetComponent<BoxCollider2D> ().enabled = false;
+            StartCoroutine(waitEnable());
+        }
+        else if( isOn2 && Input.GetKey("down")){
             Platform.GetComponent<BoxCollider2D> ().enabled = false;
             StartCoroutine(waitEnable());
         }
@@ -37,12 +44,17 @@ public class JumpDown : MonoBehaviour
         if(col.tag == "Player"){
             isOn = true;
         }
+        else if(col.tag == "Player2"){
+            isOn2 = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D col)
     {
         if(col.tag == "Player"){
             isOn = false;
+        }else if(col.tag == "Player2"){
+            isOn2 = false;
         }
     }
 }
