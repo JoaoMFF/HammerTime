@@ -288,7 +288,7 @@ PrefabInstance:
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: errorMessage
-      value: Cenas4
+      value: Cannot convert 'int' to 'string'
       objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
@@ -338,11 +338,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ErrorMessage4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 4
       objectReference: {fileID: 0}
     - target: {fileID: 5641865777015802561, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
@@ -457,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: errorMessage
-      value: Cenas4
+      value: '''Console'' does not have def for ''Code'''
       objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
@@ -503,6 +498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -74.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -595,11 +595,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ErrorMessage3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 3
       objectReference: {fileID: 0}
     - target: {fileID: 5641865777015802561, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
@@ -714,7 +709,7 @@ PrefabInstance:
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: errorMessage
-      value: Cenas4
+      value: The name 'and' does not exist
       objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
@@ -745,6 +740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.x
       value: 799.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -965,11 +965,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2149809641978249191, guid: 8a85ae2f1c8afeb48a8cfb5d5c7de001,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2149809641554979912, guid: 8a85ae2f1c8afeb48a8cfb5d5c7de001,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1089,6 +1084,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149809641978249191, guid: 8a85ae2f1c8afeb48a8cfb5d5c7de001,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2149809641978249184, guid: 8a85ae2f1c8afeb48a8cfb5d5c7de001,
         type: 3}

@@ -20,26 +20,14 @@ public class Run : MonoBehaviour
 
         OutputText = GameObject.Find("OutputText");
         
+        ErrorsDisplay();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(isOn && Input.GetKey(KeyCode.LeftControl)){
-            string Error = GetErrors();
-
-            OutputText.GetComponent<UnityEngine.UI.Text> ().text = Error;
-
-            if(Error == "" && Level1.active){
-                Level1.SetActive(false);
-                Level2.SetActive(true);
-            }
-            /* 
-            else if(Error == "" && Level1.SetActive(true)){
-                Level1.SetActive(false);
-                Level2.SetActive(true);
-            }
-            */
+            ErrorsDisplay();
         }
     }
 
@@ -69,5 +57,22 @@ public class Run : MonoBehaviour
             }
         }
         return "";
+    }
+
+    void ErrorsDisplay(){
+        string Error = GetErrors();
+
+            OutputText.GetComponent<UnityEngine.UI.Text> ().text = Error;
+
+            if(Error == "" && Level1.active){
+                Level1.SetActive(false);
+                Level2.SetActive(true);
+            }
+            /* 
+            else if(Error == "" && Level1.SetActive(true)){
+                Level1.SetActive(false);
+                Level2.SetActive(true);
+            }
+            */
     }
 }
