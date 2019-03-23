@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.77, y: 9.03}
+  m_AnchoredPosition: {x: -15.7, y: 9.03}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &127621404 stripped
@@ -559,6 +559,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Error2
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -573,11 +578,6 @@ PrefabInstance:
         type: 3}
       propertyPath: isCorrect
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Error2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -896,6 +896,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Error2
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -935,16 +945,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.x
       value: 799.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Error2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -1066,6 +1066,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -1120,11 +1125,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -74.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -1369,6 +1369,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Error2
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -1413,11 +1418,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 298.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Error2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -1551,6 +1551,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -1590,11 +1595,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.x
       value: 799.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -2347,6 +2347,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_Name
+      value: Error 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Error2
+      objectReference: {fileID: 0}
     - target: {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
         type: 3}
       propertyPath: Glitch
@@ -2401,16 +2411,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -74.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Error 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5641865777383779321, guid: 7dcd93f6d93b64847b11a6f54f2414c8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Error2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5641865777383779318, guid: 7dcd93f6d93b64847b11a6f54f2414c8, type: 3}
@@ -4895,7 +4895,7 @@ PrefabInstance:
     - target: {fileID: 6114365143581801700, guid: b9ae9d4d40c34b64f8e6e1d017ea0e42,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.58
+      value: -15.01
       objectReference: {fileID: 0}
     - target: {fileID: 6114365143581801700, guid: b9ae9d4d40c34b64f8e6e1d017ea0e42,
         type: 3}
@@ -4946,6 +4946,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6114365143581801499, guid: b9ae9d4d40c34b64f8e6e1d017ea0e42,
+        type: 3}
+      propertyPath: orthographic size
+      value: 9.75741
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9ae9d4d40c34b64f8e6e1d017ea0e42, type: 3}
