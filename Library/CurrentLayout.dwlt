@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 79
+  controlID: 42
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,10 +382,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6fbffff
-      m_LastClickedID: -1066
-      m_ExpandedIDs: d6fbffffda110000
+      scrollPos: {x: 0, y: 211}
+      m_SelectedIDs: 9a36000042370000283700006e350000f0350000
+      m_LastClickedID: 13808
+      m_ExpandedIDs: a8f7ffffbcf7ffff48f9ffffd6fbffff28350000343500005035000092350000be350000c2350000ca350000e4350000723600007a360000bc360000c2360000c636000022370000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -474,9 +474,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 31.46166
+    m_Target: 25.800774
     speed: 2
-    m_Value: 31.46166
+    m_Value: 25.800774
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -721,19 +721,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Sprites
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Sprites
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\Joao_\Documents\HammerTime
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: b80c0000
-    m_LastClickedID: 3256
+    m_SelectedIDs: 740f0000
+    m_LastClickedID: 3956
     m_ExpandedIDs: 000000007a0a0000ee0b00001e0d0000740f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -789,8 +789,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000f20e0000f42e0000f60d0000a40c0000200e000000000000500e0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000f20e0000f42e0000f60d0000a40c0000200e000000000000500e0000820d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -814,7 +814,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 54}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 214
 --- !u!114 &20
