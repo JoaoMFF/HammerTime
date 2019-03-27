@@ -23,7 +23,19 @@ public class SingleError1 : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor){
+            if(isOn && Input.GetKey(KeyCode.Period)){
+            if(!isCorrect){
+                Glitch.SetActive(true);
+                StartCoroutine(waitEnable());
+            }
+
+            TextToDisplay.GetComponent<UnityEngine.UI.Text> ().text = Correct;
+            isCorrect = true;
+        }
+        }
+        else
         if(isOn && Input.GetKey(KeyCode.RightControl)){
             if(!isCorrect){
                 Glitch.SetActive(true);

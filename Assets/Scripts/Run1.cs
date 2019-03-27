@@ -27,11 +27,19 @@ public class Run1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isOn && Input.GetKey(KeyCode.RightControl)){
+        if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor){
+            if(isOn && Input.GetKey(KeyCode.Period)){
             Glitch.SetActive(true);
             StartCoroutine(waitEnable());
             ErrorsDisplay();
+            }
         }
+        else
+            if(isOn && Input.GetKey(KeyCode.RightControl)){
+            Glitch.SetActive(true);
+            StartCoroutine(waitEnable());
+            ErrorsDisplay();
+            }
     }
 
 

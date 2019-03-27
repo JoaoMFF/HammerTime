@@ -29,8 +29,14 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-            // Read the inputs.
             bool crouch = Input.GetKey(KeyCode.RightControl);
+            // Read the inputs.
+            if (Application.platform == RuntimePlatform.OSXPlayer || Application.platform == RuntimePlatform.OSXEditor){
+                crouch = Input.GetKey(KeyCode.Period);
+            }
+            
+            
+            
             float h = CrossPlatformInputManager.GetAxis("HorizontalP2");
             // Pass all parameters to the character control script.
             m_Character.Move(h, crouch, m_Jump);
